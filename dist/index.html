@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Commerce Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="store-name">JS Nation Store</h1>
+      <hr />
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <img
+                src="https://data.commercelayer.app/seed/images/skus/HOODIEMX7F7F7F000000LXXX_FLAT.png"
+                alt="A Gray Men Hoodie with Black Logo"
+              />
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <h4>Gray Men Hoodie with Black Logo (L)</h4>
+              <p>HOODIEMX7F7F7F000000</p>
+              <p>
+                This comfortable hoodie is made of 100% combed ring-spun cotton
+                except for heather black logo, which contains polyester. Our
+                premium Unisex Hoodie Sweatshirt is everything you could ask
+                for: it's warm and cozy, heavyweight, unique, roomy, and it's
+                built to last.
+              </p>
+            </div>
+
+            <div
+              class="clayer-price"
+              id="price"
+              data-sku-code="HOODIEMX7F7F7F000000LXXX"
+            >
+              <span class="bold amount"></span>
+              <span class="compare-at-amount"></span>
+            </div>
+
+            <div class="select">
+              <select
+                class="clayer-variant-select"
+                name="variant"
+                data-availability-message-container-id="availability-message"
+                data-add-to-bag-id="add-to-bag"
+                data-add-to-bag-quantity-id="add-to-bag-quantity"
+              >
+                <option value="" disabled selected>Select your size</option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="HOODIEMX7F7F7F000000SXXX"
+                  data-sku-name="Gray Men Hoodie with Black Logo (S)"
+                  data-sku-reference="HOODIEMX7F7F7F000000SXXX"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  data-price-container-id="price"
+                  value=""
+                >
+                  Small (S)
+                </option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="HOODIEMX7F7F7F000000SXXX"
+                  data-sku-name="Gray Men Hoodie with Black Logo (M)"
+                  data-sku-reference="HOODIEMX7F7F7F000000MXXX"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  data-price-container-id="price"
+                  value=""
+                >
+                  Medium (M)
+                </option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="HOODIEMX7F7F7F000000SXXX"
+                  data-sku-name="Gray Men Hoodie with Black Logo (L)"
+                  data-sku-reference="HOODIEMX7F7F7F000000LXXX"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  data-price-container-id="price"
+                  value=""
+                >
+                  Large (L)
+                </option>
+                <option
+                  class="clayer-variant"
+                  data-sku-code="HOODIEMX7F7F7F000000SXXX"
+                  data-sku-name="Gray Men Hoodie with Black Logo (XL)"
+                  data-sku-reference="HOODIEMX7F7F7F000000XLXX"
+                  data-sku-image-url="https://img.commercelayer.io/skus/SWEETHMUB7B7B7000000.png?fm=jpg&q=90"
+                  data-price-container-id="price"
+                  value=""
+                >
+                  Extra Large (XL)
+                </option>
+              </select>
+            </div>
+
+            <input
+              id="add-to-bag-quantity"
+              type="number"
+              min="1"
+              max="50"
+              class="input clayer-add-to-bag-quantity"
+            />
+
+            <a
+              href="#"
+              class="button is-fullwidth clayer-add-to-bag"
+              id="add-to-bag"
+              data-availability-message-container-id="availability-message"
+              >Add to bag</a
+            >
+
+            <div
+              class="clayer-availability-message-container"
+              id="availability-message"
+            ></div>
+          </div>
+        </div>
+
+        <template id="clayer-availability-message-available-template">
+          <p class="has-text-success">
+            Available in
+            <span class="clayer-availability-message-available-min-days"></span>
+            -
+            <span class="clayer-availability-message-available-max-days"></span>
+            days with
+            <span
+              class="clayer-availability-message-available-shipping-method-name"
+            ></span>
+            (<span
+              class="
+                clayer-availability-message-available-shipping-method-price
+              "
+            ></span
+            >)
+          </p>
+        </template>
+        <template id="clayer-availability-message-unavailable-template">
+          <p class="has-text-danger">The selected SKU is not available.</p>
+        </template>
+
+        <h2 class="title">Shopping bag</h2>
+        <p class="subtitle">
+          Your shopping bag contains
+          <span class="clayer-shopping-bag-items-count">0</span> items (<span
+            class="clayer-shopping-bag-total"
+          ></span
+          >)
+          <a href="#" class="clayer-shopping-bag-toggle">toggle</a>
+        </p>
+
+        <div id="clayer-shopping-bag-container">
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>SKU Image</th>
+                <th colspan="2">SKU</th>
+                <th>Unit price</th>
+                <th>Q.ty</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="clayer-shopping-bag-items-container"></tbody>
+            <template id="clayer-shopping-bag-item-template">
+              <tr>
+                <td class="clayer-shopping-bag-item-name"></td>
+                <td class="clayer-shopping-bag-item-unit-amount"></td>
+                <td class="clayer-shopping-bag-item-qty-container">
+                  <input type="number" max="100" />
+                  <span
+                    class="
+                      clayer-shopping-bag-item-availability-message-container
+                    "
+                  ></span>
+                </td>
+                <td class="clayer-shopping-bag-item-total-amount"></td>
+                <td>
+                  <a href="#" class="clayer-shopping-bag-item-remove">remove</a>
+                </td>
+              </tr>
+            </template>
+          </table>
+
+          <table class="table is-fullwidth">
+            <tr>
+              <td>Subtotal</td>
+              <td class="clayer-shopping-bag-subtotal"></td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td class="clayer-shopping-bag-shipping"></td>
+            </tr>
+            <tr>
+              <td>Payment</td>
+              <td class="clayer-shopping-bag-payment"></td>
+            </tr>
+            <tr>
+              <td>Discount</td>
+              <td class="clayer-shopping-bag-discount"></td>
+            </tr>
+            <tr>
+              <td>Taxes</td>
+              <td class="clayer-shopping-bag-taxes"></td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td class="clayer-shopping-bag-total"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Config -->
+    <div
+      id="clayer-config"
+      data-base-url="https://js-nation.commercelayer.io"
+      data-cache="true"
+      data-client-id="I-zsgzjsJ1OYtiUyBHDLOygb4AU821Twm89gN4044Kg"
+      data-market-id="4802"
+      data-country-code="US"
+      data-language-code="en"
+      data-cart-url="https://example.com/cart"
+      data-return-url="https://example.com/return"
+      data-privacy-url="https://example.com/privacy"
+      data-terms-url="https://example.com/terms"
+      data-dev-settings-debug="true"
+      data-dev-settings-console="true"
+      data-dev-settings-trace="true"
+    ></div>
+
+    <script type="text/javascript" src="./dist/commercelayer.min.js"></script>
+  <script src="commercelayer.min.js"></script></body>
+</html>
