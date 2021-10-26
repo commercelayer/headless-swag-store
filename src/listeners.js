@@ -8,23 +8,21 @@ import {
 
 export default {
   setupVariants: () => {
-    const variantSelects = document.querySelectorAll(".clayer-variant-select");
-    variantSelects.forEach((variantSelect) => {
-      variantSelect.addEventListener("change", (event) => {
-        const target = event.target;
-        let selectedOption = variantSelect.options[target.selectedIndex];
+    const variantRadios = document.querySelectorAll('.clayer-variant-radio')
+    variantRadios.forEach((variantRadio) => {
+      variantRadio.addEventListener('click', () => {
         api.selectSku(
-          selectedOption.value,
-          selectedOption.dataset.skuName,
-          selectedOption.dataset.skuCode,
-          selectedOption.dataset.skuImageUrl,
-          target.dataset.priceContainerId,
-          target.dataset.availabilityMessageContainerId,
-          target.dataset.addToBagId,
-          target.dataset.addToBagQuantityId
-        );
-      });
-    });
+          variantRadio.value,
+          variantRadio.dataset.skuName,
+          variantRadio.dataset.skuCode,
+          variantRadio.dataset.skuImageUrl,
+          variantRadio.dataset.priceContainerId,
+          variantRadio.dataset.availabilityMessageContainerId,
+          variantRadio.dataset.addToBagId,
+          variantRadio.dataset.addToBagQuantityId
+        )
+      })
+    })
   },
   setupAddVariantQuantity: () => {
     const addVariantsQuantity = document.querySelectorAll(

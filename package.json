@@ -12,7 +12,7 @@
     "url": "git+https://github.com/BolajiAyodeji/headless-swag-store.git"
   },
   "keywords": [
-    "commerce layer",
+    "commercelayer",
     "jamstack",
     "headless",
     "ecommerce",
@@ -26,8 +26,10 @@
   "dependencies": {
     "@commercelayer/js-auth": "^2.0.2",
     "@commercelayer/js-sdk": "^2.14.3",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "tailwindcss": "^2.2.17"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
