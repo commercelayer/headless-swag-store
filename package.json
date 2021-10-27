@@ -28,17 +28,19 @@
     "@commercelayer/js-sdk": "^2.14.3",
     "@tailwindcss/aspect-ratio": "^0.3.0",
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.20",
-    "tailwindcss": "^2.2.17"
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^10.3.7",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.5.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

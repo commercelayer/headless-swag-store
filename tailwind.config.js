@@ -1,4 +1,5 @@
 module.exports = {
+  purge: [],
   theme: {
     extend: {
       gridTemplateRows: {
@@ -11,8 +12,5 @@ module.exports = {
       borderColor: ["checked"],
     },
   },
-  plugins: [
-    // ...
-    require("@tailwindcss/aspect-ratio"),
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
