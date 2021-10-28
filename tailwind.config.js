@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./index.html"],
   theme: {
     extend: {
       gridTemplateRows: {

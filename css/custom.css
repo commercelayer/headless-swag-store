@@ -1,16 +1,6 @@
-.box {
-    width: 55%;
-  }
-  #clayer-shopping-bag-container {
-    display: none;
-  }
-  #clayer-shopping-bag-container.open {
-    display: block;
-  }
-  .clayer-add-to-bag {
-    margin-top: 50px;
-  }
-  .clayer-add-to-bag-quantity {
-    width: 100px;
-  }
-  
+#clayer-shopping-bag-container {
+  display: none;
+}
+#clayer-shopping-bag-container.open {
+  display: block;
+}
