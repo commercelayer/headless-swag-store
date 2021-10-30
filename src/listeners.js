@@ -8,9 +8,9 @@ import {
 
 export default {
   setupVariants: () => {
-    const variantRadios = document.querySelectorAll('.clayer-variant-radio')
+    const variantRadios = document.querySelectorAll(".clayer-variant-radio");
     variantRadios.forEach((variantRadio) => {
-      variantRadio.addEventListener('click', () => {
+      variantRadio.addEventListener("click", () => {
         api.selectSku(
           variantRadio.value,
           variantRadio.dataset.skuName,
@@ -20,9 +20,9 @@ export default {
           variantRadio.dataset.availabilityMessageContainerId,
           variantRadio.dataset.addToBagId,
           variantRadio.dataset.addToBagQuantityId
-        )
-      })
-    })
+        );
+      });
+    });
   },
   setupAddVariantQuantity: () => {
     const addVariantsQuantity = document.querySelectorAll(

@@ -1,6 +1,5 @@
 import config from "./config";
 import { Sku, Order, LineItem } from "@commercelayer/js-sdk";
-import { updateShoppingBagSummary, updateShoppingBagCheckout } from "./ui";
 import {
   setOrderToken,
   getOrderToken,
@@ -8,6 +7,8 @@ import {
   getElementFromTemplate,
 } from "./utils";
 import {
+  updateShoppingBagSummary,
+  updateShoppingBagCheckout,
   updatePrices,
   updateVariants,
   updateVariantsQuantity,
