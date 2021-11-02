@@ -5,7 +5,8 @@
   "main": "./dist/commercelayer.min.js",
   "scripts": {
     "start": "rm -rf ./dist && webpack --progress --watch --mode=development",
-    "build": "rm -rf ./dist && NODE_ENV=production npx tailwindcss -o ./css/tailwind.css --minify && webpack --progress"
+    "build": "rm -rf ./dist && NODE_ENV=production npx tailwindcss -o ./assets/css/tailwind.css --minify && webpack --progress",
+    "tailwind": "npx tailwindcss -o ./assets/css/tailwind.css"
   },
   "repository": {
     "type": "git",
