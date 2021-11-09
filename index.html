@@ -16,7 +16,6 @@
     <section>
       <div class="bg-white">
         <!-- Breadcrumb-->
-
         <div class="pt-6">
           <nav aria-label="Breadcrumb">
             <ol
@@ -658,7 +657,8 @@
               sm:px-6
               max-w-2xl
               lg:max-w-7xl
-              border-solid border-4 border-indigo-500
+              border-4 border-indigo-500
+              overflow-y-auto
             "
           >
             <h2 class="text-3xl mb-4">Shopping bag</h2>
@@ -668,21 +668,25 @@
               items worth
               <span class="font-bold clayer-shopping-bag-total"></span>
             </p>
-            <a
-              href="#"
+
+            <button
               class="
-                border-solid border-4 border-indigo-500
-                p-2
+                bg-indigo-500
+                py-3
+                px-8
+                rounded-md
+                text-white
                 clayer-shopping-bag-toggle
               "
-              >Open Bag ⤵️</a
             >
+              Toggle Bag 🔃
+            </button>
 
             <div id="clayer-shopping-bag-container">
               <table
-                class="min-w-full mt-5 table-fixed divide-y divide-gray-200"
+                class="min-w-full table-auto mt-16 divide-y divide-indigo-200"
               >
-                <thead vlass="bg-gray-50">
+                <thead class="bg-indigo-50">
                   <tr>
                     <th
                       class="
@@ -690,7 +694,6 @@
                         py-3
                         text-left text-xs
                         font-medium
-                        text-gray-500
                         uppercase
                         tracking-wider
                       "
@@ -703,7 +706,6 @@
                         py-3
                         text-left text-xs
                         font-medium
-                        text-gray-500
                         uppercase
                         tracking-wider
                       "
@@ -716,7 +718,6 @@
                         py-3
                         text-left text-xs
                         font-medium
-                        text-gray-500
                         uppercase
                         tracking-wider
                       "
@@ -729,7 +730,6 @@
                         py-3
                         text-left text-xs
                         font-medium
-                        text-gray-500
                         uppercase
                         tracking-wider
                       "
@@ -745,11 +745,6 @@
                 <template id="clayer-shopping-bag-item-template">
                   <tr>
                     <td class="p-5">
-                      <img
-                        src=""
-                        class="h-10 w-10 clayer-shopping-bag-item-image"
-                      />
-                      <br />
                       <span class="clayer-shopping-bag-item-name"></span>
                     </td>
                     <td class="p-5 clayer-shopping-bag-item-unit-amount"></td>
@@ -757,7 +752,7 @@
                       <input
                         type="number"
                         min="1"
-                        class="border rounded-md focus:outline-none w-10"
+                        class="border rounded-md focus:outline-none pl-3 w-10"
                       />
                       <span
                         class="
@@ -858,6 +853,10 @@
       data-dev-settings-trace="true"
     ></div>
 
-    <script type="text/javascript" src="./dist/commercelayer.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@commercelayer/js-dropin@1.5.9/lib/index.js
+    "
+    ></script>
   </body>
 </html>
