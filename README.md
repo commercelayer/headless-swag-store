@@ -4,7 +4,7 @@
 
 A minimal ecommerce product page built with static content, HTML5, TailwindCSS, and integrated with Commerce Layer to make the static website shoppable using the [Dropin Javascript library](https://github.com/commercelayer/commercelayer-js-dropin).
 
-Learn how to build this project by reading [this comprehensive tutorial](#).
+Learn how to build this project by reading [this comprehensive tutorial](https://commercelayer.io/blog/how-to-make-any-website-shoppable-with-commerce-layer).
 
 ---
 
