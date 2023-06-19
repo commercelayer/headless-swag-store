@@ -1,3 +1,7 @@
+> **Warning**
+> 
+> We revamped our Drop-in library and deprecated the old one, which this tutorial is about. The new [JS Drop-in](https://github.com/commercelayer/drop-in.js) can implement our commerce web components (price, availability, add to cart, shopping cart, checkout link, and my account link) that can operate as micro frontends, into any HTML webpage. Read [this article](https://commercelayer.io/blog/composable-commerce-with-micro-frontends) to learn more and see our micro frontends in action.
+
 # headless-swag-store
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8aa583b-2c90-4095-b64e-501686e88963/deploy-status)](https://app.netlify.com/sites/headless-swag-store/deploys)
